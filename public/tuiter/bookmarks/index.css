@@ -30,15 +30,10 @@ body {
 .wd-grid-row {
     clear:both;
 }
-.wd-grid-col-left_ten {
-    float:left;
-    width:10%;
+.wd-flex-left {
+    display: flex;
+    justify-content:flex-start;
 }
-.wd-grid-col-left_ninety {
-    float:left;
-    width:90%;
-}
-
 
 .wd-avatar-image {
     border-radius: 80%;
