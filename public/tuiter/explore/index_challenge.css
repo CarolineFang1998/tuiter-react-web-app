@@ -1,0 +1,132 @@
+.wd-blue-tuiter{
+    color: rgb(29, 161, 242);
+}
+
+.wd-gold{
+    color: goldenrod;
+}
+
+.wd-grey{
+    color: gray !important;
+}
+
+.wd-small-text{
+    font-size: 13px;
+}
+
+.wd-button-tweet{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+    border:none;
+}
+
+
+.wd-search-bar input{
+    font-size: 20px;
+    width: 90%;
+    padding-left: 35px;
+}
+
+.wd-search-image {
+    position: absolute;
+    left: 10px;
+    top:10px;
+}
+.wd-search-gear {
+    float:right;
+    margin-right: 10px;
+    color: grey;
+}
+
+.wd-huge-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wd-bottom-left-small {
+    position: absolute;
+    bottom: 40px;
+    left: 16px;
+    font-size: 15px;
+}
+
+.wd-float-left {
+    float: left;
+    width: 80%;
+}
+.wd-float-left-small {
+    float: left;
+    width: 20%;
+}
+.wd-float-left-25 {
+    float: left;
+    width: 25%;
+}
+.wd-float-left-50 {
+    float: left;
+    width: 50%;
+}
+.wd-float-done{
+    clear: both;
+}
+
+.wd-color-grey{
+    font-size: 15px;
+    color: rgb(110,118,125);
+}
+.wd-post-image{
+    border-radius: 10px;
+}
+
+.wd-button-follow{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.wd-follow-logo{
+    border-radius: 50%;
+}
+
+.wd-inline-block {
+    display: inline-block;
+}
+
+a:link {
+    text-decoration: none;
+}
+.active{
+    font-weight: bold !important;
+    background-color: white !important;
+    color: black !important;
+}
+.nav-item .active{
+    font-weight: bold !important;
+    background-color: white !important;
+    color: black !important;
+    border-bottom-width: 5px!important;
+    border-bottom-style: solid!important;
+    border-color: rgb(29,161,242) !important;
+}
