@@ -9,7 +9,7 @@ const ExploreComponent = () => {
                     <i class="fa fa-search wd-search-image"></i>
                     <input id="search" class="wd-search-input wd-rounded-corners-all-around "
                            type="text" placeholder="Search Twitter">
-                    <a href="explore-settings.html" class="wd-search-gear">
+                    <a href="explore-settings.html" id="search-input-icon" class="wd-search-gear">
                         <i class="fa fa-cog fa-2x"></i>
                     </a>
                 </div>
@@ -33,19 +33,11 @@ const ExploreComponent = () => {
                 </li>
            </ul>
            <!-- image with overlaid text -->
-           <div class="position-relative pt-1 ">
-            <div class="wd-image-text position-relative wd-border-bottom">
-              <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" class="wd-content-img">
-              <div>
-                <span class="d-block d-sm-none wd-content-text-xs">SpaceX's Starship</span>
-                <span class="d-none d-sm-block d-md-none wd-content-text-sm">SpaceX's Starship</span>
-                <span class="d-none d-md-block d-lg-none wd-content-text-md">SpaceX's Starship</span>
-                <span class="d-none d-lg-block d-xl-none wd-content-text-lg">SpaceX's Starship</span>
-                <span class="d-none d-xl-block d-xxl-none wd-content-text-xl">SpaceX's Starship</span>
-                <span class="d-none d-xxl-block wd-content-text-xxl">SpaceX's Starship</span>
-              </div>
-            </div>
-          </div>
+           <!--                 huge image-->
+                <div class="wd-huge-image">
+                    <img src="image/Starship.webp" width="100%" height="350px">
+                    <div class="wd-bottom-left">SpaceX's Starship</div>
+                </div>
            
            ${PostSummaryList()}
     `);

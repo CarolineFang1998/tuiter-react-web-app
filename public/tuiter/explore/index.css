@@ -44,11 +44,11 @@
 
 .wd-float-left {
     float: left;
-    width: 80%;
+    width: 90%;
 }
 .wd-float-left-small {
     float: left;
-    width: 20%;
+    width: 10%;
 }
 .wd-float-left-25 {
     float: left;
@@ -82,9 +82,4 @@
 
 .wd-follow-logo{
     border-radius: 50%;
-}
-
-.wd-content-img{
-    width: 100%;
-    height: 260px;
 }
