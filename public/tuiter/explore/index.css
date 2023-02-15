@@ -20,12 +20,12 @@
 
 .wd-search-image {
     position: absolute;
-    left: 10px;
+    left: 25px;
     top:10px;
 }
 .wd-search-gear {
     float:right;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .wd-huge-image {
@@ -82,4 +82,9 @@
 
 .wd-follow-logo{
     border-radius: 50%;
+}
+
+.wd-content-img{
+    width: 100%;
+    height: 260px;
 }
