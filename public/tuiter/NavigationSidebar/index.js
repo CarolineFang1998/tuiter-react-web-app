@@ -1,7 +1,7 @@
 import navigations from "./navigations.js";
 import navigationItem from "./navigationItem.js";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">
@@ -10,7 +10,7 @@ const NavigationSidebar = () => {
        <!-- continue rest of list, e.g.,
             Home, Explore, Notifications,  Messages, etc. -->
        ${navigations.map(navigation=>{
-           return(navigationItem(navigation))})
+           return(navigationItem(navigation, active))})
         .join('')}
        
    </div>
