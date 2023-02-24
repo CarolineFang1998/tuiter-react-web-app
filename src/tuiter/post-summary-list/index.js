@@ -6,7 +6,7 @@ import who from "./../who-to-follow-list/who.json";
 
 const PostSummaryList = () => {
     return(
-        <ul className="list-group">
+        <ul className="list-group me-2">
             {
                 postsArray.map(post =>
                                    <PostSummaryItem

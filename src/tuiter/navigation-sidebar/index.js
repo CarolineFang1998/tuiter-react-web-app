@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import * as Icon from 'react-bootstrap-icons';
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
@@ -13,7 +14,7 @@ const NavigationSidebar = () => {
             <a className="list-group-item">Tuiter</a>
             <Link to="/tuiter/home" className={`list-group-item 
                     ${active === 'home'?'active':''}`}>
-                Home
+                <span> Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item 
                     ${active === 'explore'?'active':''}`}>
