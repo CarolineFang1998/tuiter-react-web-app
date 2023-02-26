@@ -7,11 +7,13 @@ import {Routes, Route} from "react-router";
 function App() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route index element={<Labs/>}/>
-                <Route path="/hello" element={<HelloWorld/>}/>
-                <Route path="/tuiter/*" element={<Tuiter/>}/>
-            </Routes>
+            <div className="container">
+                <Routes>
+                    <Route index element={<Labs/>}/>
+                    <Route path="/hello" element={<HelloWorld/>}/>
+                    <Route path="/tuiter/*" element={<Tuiter/>}/>
+                </Routes>
+            </div>
         </BrowserRouter>
     );
 }
