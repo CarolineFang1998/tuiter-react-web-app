@@ -5,10 +5,12 @@ import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
+import Nav from "../nav";
 
 function Tuiter() {
     return (
         <div className="row mt-2">
+            <Nav/>
             <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active="explore"/>
             </div>
