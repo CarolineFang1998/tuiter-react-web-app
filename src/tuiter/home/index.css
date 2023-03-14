@@ -95,9 +95,19 @@
     color:black;
 }
 
+.wd-bookmark-text-content-black {
+    font-size: 15px;
+    color:black;
+}
+
 .wd-bookmark-text-content-grey {
     font-size: 15px;
     color:darkgray;
+}
+
+.wd-bookmark-text-content-red {
+    font-size: 15px;
+    color:red;
 }
 
 .wd-grid-col-left_twenty_five {
@@ -123,4 +133,7 @@
 }
 .wd-bookmark-icon-black {
     color: black;
+}
+.wd-bookmark-icon-red {
+    color: red;
 }

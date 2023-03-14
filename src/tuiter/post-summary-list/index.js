@@ -1,10 +1,11 @@
 import React from "react";
-import postsArray from './posts.json';
+import {useSelector} from "react-redux";
 import PostSummaryItem
     from "./post-summary-item";
-import who from "./../who-to-follow-list/who.json";
+import who from "../data/who.json";
 
 const PostSummaryList = () => {
+    const postsArray = useSelector(state => state.tuits)
     return(
         <ul className="list-group me-2">
             {

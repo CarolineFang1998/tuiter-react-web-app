@@ -14,38 +14,47 @@ const NavigationSidebar = () => {
             <a className="list-group-item">Tuiter</a>
             <Link to="/tuiter/home" className={`list-group-item 
                     ${active === 'home'?'active':''}`}>
-                <span> Home</span>
+                <Icon.HouseDoorFill/>
+                <span class="d-none d-xl-inline"> Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item 
                     ${active === 'explore'?'active':''}`}>
-                Explore
+                <Icon.Hash/>
+                <span class="d-none d-xl-inline"> Explore</span>
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <Icon.Asterisk/>
+                <span class="d-none d-xl-inline"> Labs</span>
             </Link>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-                Notifications
+                <Icon.Bell/>
+                <span class="d-none d-xl-inline"> Notifications</span>
             </a>
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-                Messages
+                <Icon.Envelope/>
+                <span class="d-none d-xl-inline"> Messages</span>
             </a>
             <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <Icon.Bookmark/>
+                <span class="d-none d-xl-inline"> Bookmarks</span>
             </a>
             <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                Lists
+                <Icon.List/>
+                <span class="d-none d-xl-inline"> Lists</span>
             </a>
             <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-                Profile
+                <Icon.Person/>
+                <span class="d-none d-xl-inline"> Profile</span>
             </a>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-                More
+                <Icon.ThreeDots/>
+                <span class="d-none d-xl-inline"> More</span>
             </a>
         </div>
     );
