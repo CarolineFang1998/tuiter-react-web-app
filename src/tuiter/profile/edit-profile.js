@@ -8,7 +8,6 @@ import { updateProfile } from "./profile-reducer";
 const EditProfile = () => {
     const profile = useSelector((state) => state.profile);
     console.log(profile);
-    // const [newProfile, setProfile] = useState(profile);
 
     let [name, setName] = useState(profile.name);
     let [bio, setBio] = useState(profile.bio);
@@ -29,7 +28,6 @@ const EditProfile = () => {
                                }));
 
     };
-
 
     return(
         <>
