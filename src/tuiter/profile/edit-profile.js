@@ -56,7 +56,7 @@ const EditProfile = () => {
 
             <form className="mb-2">
                 <div className="form-group my-2 wd-border">
-                    <label htmlFor="name" className="form-label ms-2">Name</label><br/>
+                    <label htmlFor="name" className="form-label ms-2 wd-color-grey">Name</label><br/>
                     <input
                         type="text"
                         className="ms-2"
@@ -67,7 +67,7 @@ const EditProfile = () => {
                 </div>
 
                 <div className="form-group my-2 wd-border">
-                    <label for="bio" className="form-label ms-2">Bio</label><br/>
+                    <label for="bio" className="form-label ms-2 wd-color-grey">Bio</label><br/>
                     <textarea
                         className="ms-2"
                         rows="4"
@@ -78,7 +78,7 @@ const EditProfile = () => {
                     />
                 </div>
                 <div className="form-group my-2 wd-border">
-                    <label for="location" className="form-label ms-2">Location</label><br/>
+                    <label for="location" className="form-label ms-2 wd-color-grey">Location</label><br/>
                     <input
                         className="ms-2"
                         id = "location"
@@ -88,7 +88,7 @@ const EditProfile = () => {
                     />
                 </div>
                 <div className="form-group my-2 wd-border">
-                    <label for="website" className="form-label ms-2">Website</label><br/>
+                    <label for="website" className="form-label ms-2 wd-color-grey">Website</label><br/>
                     <input
                         className="ms-2"
                         id = "website"
@@ -98,7 +98,7 @@ const EditProfile = () => {
                     />
                 </div>
                 <div className="form-group wd-border">
-                    <label for="dob" className="form-label ms-2">Date of birth</label><br/>
+                    <label for="dob" className="form-label ms-2 wd-color-grey">Date of birth</label><br/>
                     <input
                         className="ms-2"
                         id = "dob"
