@@ -46,11 +46,11 @@ const NavigationSidebar = () => {
                 <Icon.List/>
                 <span class="d-none d-xl-inline"> Lists</span>
             </a>
-            <a className={`list-group-item
+            <Link to="/tuiter/profile" className={`list-group-item 
                     ${active === 'profile'?'active':''}`}>
                 <Icon.Person/>
                 <span class="d-none d-xl-inline"> Profile</span>
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <Icon.ThreeDots/>

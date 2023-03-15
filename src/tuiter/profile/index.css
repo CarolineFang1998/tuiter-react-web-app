@@ -1,0 +1,56 @@
+input {
+    width: 90%;
+}
+textarea{
+    width: 90%;
+}
+.wd-border{
+    border: lightgrey 1px solid;
+}
+.wd-back-icon{
+    size: 30px;
+}
+.wd-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wd-handle{
+    font-size: 15px;
+    color: gray;
+}
+
+.wd-banner{
+    position:relative;
+    top:0px;
+    left: 0px;
+    height: 260px;
+    width:100%;
+}
+.wd-avatar{
+    position:relative;
+    top:-80px;
+    left: 20px;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+.wd-button-edit{
+    color: black;
+    background-color: white;
+    border-radius: 16px;
+    border-color: lightgrey;
+    padding: 5px 10px;
+    margin: 4px 2px;
+}
+.wd-button-save{
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+    border: none;
+    padding: 5px 10px;
+    margin: 4px 2px;
+}
+
+.wd-icon-black{
+    color: black;
+}
