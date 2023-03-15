@@ -1,8 +1,10 @@
 input {
     width: 90%;
+    border-style: hidden;
 }
 textarea{
     width: 90%;
+    border-style: hidden;
 }
 .wd-border{
     border: lightgrey 1px solid;
