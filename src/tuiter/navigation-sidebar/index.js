@@ -5,9 +5,7 @@ import * as Icon from 'react-bootstrap-icons';
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
-    console.log("pathname "+pathname)
     const paths = pathname.split('/')
-    console.log("pathn "+paths)
     const active = paths[2];
     return (
         <div className="list-group ms-2">

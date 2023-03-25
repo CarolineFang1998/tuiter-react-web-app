@@ -2,6 +2,7 @@ import React from "react";
 import * as Icon from 'react-bootstrap-icons';
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "../tuit-stats/tuit-stats";
 
 const TuitsItem = (
     {
@@ -29,9 +30,8 @@ const TuitsItem = (
                     <img className="wd-avatar-image" src={post.image}/>
                 </div>
 
-
                 <div className="col-11">
-                    <div className = "wd-bookmark-post-shift " >
+                    <div className="wd-bookmark-post-shift ">
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(post._id)}></i>
                         <span classNam="wd-bookmark-author">{post.userName} </span>
@@ -40,39 +40,14 @@ const TuitsItem = (
                         ·
                         <span className="wd-bookmark-handle"> {post.time}</span><br/>
 
-                        <div className = "">
-                            {post.tuit}
-                        </div>
+                        <div className="">{post.tuit}</div>
+                        <TuitStats post={post} />
 
-                        <div className = "wd-icons">
-                            <div className = "wd-grid-col-left_twenty_five">
-                                <a href="#">
-                                    <Icon.ChatRight className="wd-bookmark-icon-black"/>
-                                    <span className="wd-bookmark-text-content-black wd-bookmark-icon-space">
-                                 {post.replies}</span>
-                                </a>
-                            </div>
-                            <div className = "wd-grid-col-left_twenty_five">
-                                <a href="#">
-                                    <Icon.Repeat className="wd-bookmark-icon-black"/>
-                                    <span className="wd-bookmark-text-content-black wd-bookmark-icon-space">
-                                 {post.retuits}</span>
-                                </a>
-                            </div>
-                            <div className = "wd-grid-col-left_twenty_five">
-                                <a href="#">
-                                    {post.liked? <Icon.HeartFill className="wd-bookmark-icon-red"/> :<Icon.Heart className="wd-bookmark-icon-black"/>}
-                                    <span className="wd-bookmark-text-content-black wd-bookmark-icon-space ">{post.likes}</span>
-                                </a>
-                            </div>
-                            <div className = "wd-grid-col-left_twenty_five">
-                                <a href="#">
-                                    <Icon.BoxArrowUp className="wd-bookmark-icon-black"/>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
+
+
+
             </div>
         </li>
 

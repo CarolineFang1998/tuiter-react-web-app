@@ -70,5 +70,5 @@ const tuitsSlice = createSlice({
        reducers: {}
 });
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, updateLike} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
