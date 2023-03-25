@@ -1,6 +1,7 @@
 import React from "react";
 import {useSelector} from "react-redux";
 import * as Icon from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 const ProfileDisplay = () => {
     const profile = useSelector((state) => state.profile);
@@ -9,7 +10,9 @@ const ProfileDisplay = () => {
         <div>
             <div className="row">
                 <div className="col-2 mt-3">
-                    <Icon.ArrowLeft className="fa-lg"></Icon.ArrowLeft>
+                    <Link to="/tuiter/home" >
+                        <Icon.ArrowLeft className="fa-lg" ></Icon.ArrowLeft>
+                    </Link>
                 </div>
                 <div className="col-10">
                     <div className="wd-name">{profile.name}</div>
