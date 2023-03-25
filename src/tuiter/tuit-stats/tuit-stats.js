@@ -24,20 +24,24 @@ const TuitStats = ({post}) => {
                                  {post.retuits}</span>
                     </a>
                 </div>
-                {/*<div >*/}
-                {/*    <span onClick={handleSaveButton}>*/}
-                {/*        {post.liked ? <Icon.HeartFill className="wd-bookmark-icon-red"/> :*/}
-                {/*         <Icon.Heart className="wd-bookmark-icon-black"/>}*/}
-                {/*        <span*/}
-                {/*            className="wd-bookmark-text-content-black wd-bookmark-icon-space ">{post.likes}</span>*/}
-                {/*    </span>*/}
-                {/*</div>*/}
                 <div className="wd-grid-col-left_twenty_five">
-                    Likes: {post.likes}
-                    <Icon.Heart onClick={() => dispatch(updateTuitThunk({
-                                                                   ...post,
-                                                                   likes: post.likes + 1
-                                                               }))} />
+                    <span >
+                        {post.liked ?
+                         <Icon.HeartFill className="wd-bookmark-icon-red"
+                                         onClick={() => dispatch(updateTuitThunk({
+                                                                             ...post,
+                                                                             likes: post.likes - 1,
+                                                                             liked: false
+                                                                         }))}/> :
+                         <Icon.Heart className="wd-bookmark-icon-black"
+                                     onClick={() => dispatch(updateTuitThunk({
+                                                                                 ...post,
+                                                                                 likes: post.likes + 1,
+                                                                                 liked: true
+                                                                             }))}/>}
+                        <span
+                            className="wd-bookmark-text-content-black wd-bookmark-icon-space ">{post.likes}</span>
+                    </span>
                 </div>
                 <div className="wd-grid-col-left_twenty_five">
                     <a href="">

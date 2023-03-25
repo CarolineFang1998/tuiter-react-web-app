@@ -1,7 +1,5 @@
-import {createAsyncThunk}
-    from "@reduxjs/toolkit"
-import * as service
-    from "./tuits-service"
+import {createAsyncThunk} from "@reduxjs/toolkit"
+import * as service from "./tuits-service"
 
 export const findTuitsThunk = createAsyncThunk(
     'tuits/findTuits', async () =>
@@ -22,8 +20,7 @@ export const createTuitThunk = createAsyncThunk(
         return newTuit
 })
 
-export const updateTuitThunk =
-    createAsyncThunk(
+export const updateTuitThunk = createAsyncThunk(
         'tuits/updateTuit',
         async (tuit) =>
             await service.updateTuit(tuit)

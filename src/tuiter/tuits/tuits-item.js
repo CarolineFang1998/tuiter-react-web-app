@@ -27,7 +27,7 @@ const TuitsItem = (
             <div className="row ">
 
                 <div className="col-1">
-                    <img className="wd-avatar-image" src={post.image}/>
+                    <img className="wd-avatar-image" src={`/tuiter/images/${post.image}`}></img>
                 </div>
 
                 <div className="col-11">

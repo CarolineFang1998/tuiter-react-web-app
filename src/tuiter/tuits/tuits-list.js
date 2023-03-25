@@ -5,7 +5,8 @@ import {findTuitsThunk}
     from "../../services/tuits-thunks";
 
 const TuitsList = () => {
-    const {tuits, loading} = useSelector((state) => tuitsData)
+    const {tuits, loading} = useSelector(
+        state => state.tuitsData)
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
@@ -17,6 +18,9 @@ const TuitsList = () => {
                 <li className="list-group-item">
                     Loading...
                 </li>
+            }
+            {
+                tuits.map(post => <TuitsItem post = {post}/>)
             }
         </ul>
     );
