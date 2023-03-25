@@ -8,7 +8,6 @@ import { updateLike } from "../tuits/tuits-reducer";
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
     const handleSaveButton = () => {
-        console.log(post._id);
         dispatch(updateLike(post._id));
         };
     return (
