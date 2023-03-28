@@ -118,6 +118,14 @@
     text-decoration: none;
 }
 
+.wd-grid-col-left_twenty {
+    float:left;
+    width:20%;
+}
+.wd-grid-col-left_twenty a{
+    text-decoration: none;
+}
+
 .wd-icons{
     margin-top: 12px;
     margin-left: 12px;

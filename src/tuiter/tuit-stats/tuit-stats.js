@@ -8,7 +8,7 @@ const TuitStats = ({post}) => {
     return (
         <>
             <div className="wd-icons">
-                <div className="wd-grid-col-left_twenty_five">
+                <div className="wd-grid-col-left_twenty">
                     <a href="">
                         <Icon.ChatRight className="wd-bookmark-icon-black"/>
                         <span
@@ -16,7 +16,7 @@ const TuitStats = ({post}) => {
                                  {post.replies}</span>
                     </a>
                 </div>
-                <div className="wd-grid-col-left_twenty_five">
+                <div className="wd-grid-col-left_twenty">
                     <a href="">
                         <Icon.Repeat className="wd-bookmark-icon-black"/>
                         <span
@@ -24,7 +24,7 @@ const TuitStats = ({post}) => {
                                  {post.retuits}</span>
                     </a>
                 </div>
-                <div className="wd-grid-col-left_twenty_five">
+                <div className="wd-grid-col-left_twenty">
                     <span >
                         {post.liked ?
                          <Icon.HeartFill className="wd-bookmark-icon-red"
@@ -43,7 +43,26 @@ const TuitStats = ({post}) => {
                             className="wd-bookmark-text-content-black wd-bookmark-icon-space ">{post.likes}</span>
                     </span>
                 </div>
-                <div className="wd-grid-col-left_twenty_five">
+                <div className="wd-grid-col-left_twenty">
+                    <span >
+                        {post.disliked ?
+                         <Icon.HandThumbsDownFill className="wd-bookmark-icon-black"
+                                         onClick={() => dispatch(updateTuitThunk({
+                                                                                     ...post,
+                                                                                     dislikes: post.dislikes - 1,
+                                                                                     disliked: false
+                                                                                 }))}/> :
+                         <Icon.HandThumbsDown className="wd-bookmark-icon-black"
+                                     onClick={() => dispatch(updateTuitThunk({
+                                                                                 ...post,
+                                                                                 dislikes: post.dislikes + 1,
+                                                                                 disliked: true
+                                                                             }))}/>}
+                        <span
+                            className="wd-bookmark-text-content-black wd-bookmark-icon-space ">{post.dislikes}</span>
+                    </span>
+                </div>
+                <div className="wd-grid-col-left_twenty">
                     <a href="">
                         <Icon.BoxArrowUp className="wd-bookmark-icon-black"/>
                     </a>
