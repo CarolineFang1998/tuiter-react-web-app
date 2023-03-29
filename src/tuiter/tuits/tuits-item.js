@@ -34,7 +34,7 @@ const TuitsItem = (
                     <div className="wd-bookmark-post-shift ">
                         <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(post._id)}></i>
-                        <span classNam="wd-bookmark-author">{post.userName} </span>
+                        <span classNam="wd-bookmark-author"><b>{post.username}</b> </span>
                         <Icon.CheckCircleFill className="wd-bookmark-icon-blue"/>
                         <span className="wd-bookmark-handle"> {post.handle} </span>
                         ·
